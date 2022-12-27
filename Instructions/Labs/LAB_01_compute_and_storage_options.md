@@ -31,6 +31,8 @@ In this exercise, you will use an Azure Databricks workspace and perform Structu
 2. Select **Launch Workspace** to open your Databricks workspace in a new tab.
 
     ![The Azure Databricks Launch Workspace button is displayed.](images/databricks-launch-workspace.png "Launch Workspace")
+    
+    > **Warning**: Due to a known UI issue, please use the URL provided above the "Launch Workspace" button (beneath the Managed Resource Group identifier) and NOT the button itself as it will cause a permissions error to be displayed.
 
 3. In the left-hand menu of your Databricks workspace, select **Compute**.
 4. Select **+Create Cluster** to add a new cluster.
