@@ -1,8 +1,3 @@
-﻿Set-ExecutionPolicy Unrestricted
-			
-cd C:\dp-203\data-engineering-ilt-deployment\Allfiles\00\artifacts\environment-setup\automation\
-
-
 # Import modules
 Import-Module "..\solliance-synapse-automation"
 
@@ -10,14 +5,6 @@ Import-Module "..\solliance-synapse-automation"
 $templatesPath = "..\templates"
 
 # Add Values from the first setup script here
-
-# User must sign in using az login
-Write-Host "Sign into Azure using your credentials.."
-az login
-
-# Now sign in again for PowerShell resource management and select subscription
-Write-Host "Now sign in again to allow this script to create resources..."
-Connect-AzAccount
 
 if(-not ([string]::IsNullOrEmpty($selectedSub)))
 {
